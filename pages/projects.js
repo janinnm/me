@@ -61,7 +61,7 @@ export default function Projects() {
   
         </main>
   
-        <footer className="text-white flex justify-center items-center fixed bottom-0 left-0 bg-slate-800 w-screen h-10">
+        <footer className="text-white flex justify-center items-center fixed bottom-0 left-0 bg-slate-800 w-full h-10">
           <h2>© Copyright 2022 Janin Manalili.</h2>
         </footer>
   
