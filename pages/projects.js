@@ -27,7 +27,7 @@ export default function Projects() {
               <ul className="py-5 list-outside ml-6">
                 <li className="text-2xl text-teal-600 flex items-start">House School?: A Home School Organization App <a href="https://github.com/House-School/House-School"><BiLinkExternal/></a> </li>
                   <p className="text-sm text-md leading-8 text-gray-400 "> A user-friendly course organization app for teachers, homeschooling parents and students. 
-                  Using the MERN Stack following the AGILE methodology. [Sep’21 - Jun'22]</p>
+                  Using the MERN Stack following the AGILE methodology. [Sep21 - Jun22]</p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">MongoDB</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Express</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Reactjs</span>
@@ -35,25 +35,25 @@ export default function Projects() {
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Nodejs</span>
                 <li className="mt-5 text-2xl text-teal-600 border-t-[1px] border-gray-500 flex items-start">sakUNA <a href="https://github.com/CS180-2122-sakUNA/sakUNA"><BiLinkExternal/></a></li>
                   <p className="text-sm text-md leading-8 text-gray-400 "> sakUNA is an application that maps out areas experiencing disasters with the 
-                  purpose of providing disaster response and recovery efficiently based on tweets gathered in Twitter. [May'22 - Jun'22] </p>
+                  purpose of providing disaster response and recovery efficiently based on tweets gathered in Twitter. [May22 - Jun22] </p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">folium</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">pandas</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">scikit-learn</span>
                 <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">Wordle Clone App</li>
                   <p className="text-sm text-md leading-8 text-gray-400"> Implemented an application that resembles the Wordle game in Python by employing object oriented
-                  programming concepts using the Python package, BeeWare. [Jan’22 - Feb’22] </p>
+                  programming concepts using the Python package, BeeWare. [Jan22 - Feb22] </p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">BeeWare</span>
                 <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">File Server</li>
                   <p className="text-sm text-md leading-8 text-gray-400"> Implemented a file server in Linux using threads in C with concurrency that performs read, write, and empty
-                  commands on files by applying knowledge on operating systems. [Jan'22] </p>
+                  commands on files by applying knowledge on operating systems. [Jan22] </p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">C</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Linux</span>       
                 <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">Rubik's Cube Simulator</li>
-                  <p className="text-sm text-md leading-8 text-gray-400"> Implemented a Rubik’s Cube Simulator in MIPS Assembly Language and Python. [Aug'21]</p> 
+                  <p className="text-sm text-md leading-8 text-gray-400"> Implemented a Rubik’s Cube Simulator in MIPS Assembly Language and Python. [Aug21]</p> 
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Assembly</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Python</span>
                 <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">AppBeat</li>
-                  <p className="text-sm text-md leading-8 text-gray-400"> A rhythm game made in Python and package, pyglet. [Nov'19 - Dec'19]</p>
+                  <p className="text-sm text-md leading-8 text-gray-400"> A rhythm game made in Python and package, pyglet. [Nov19 - Dec19]</p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">pyglet</span>             
               </ul>
             </div>
