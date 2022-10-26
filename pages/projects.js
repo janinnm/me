@@ -48,8 +48,8 @@ export default function Projects() {
                   commands on files by applying knowledge on operating systems. [Jan22] </p>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">C</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Linux</span>       
-                <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">Rubik's Cube Simulator</li>
-                  <p className="text-sm text-md leading-8 text-gray-400"> Implemented a Rubik’s Cube Simulator in MIPS Assembly Language and Python. [Aug21]</p> 
+                <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">Rubik&apos;s Cube Simulator</li>
+                  <p className="text-sm text-md leading-8 text-gray-400"> Implemented a Rubik&apos;s Cube Simulator in MIPS Assembly Language and Python. [Aug21]</p> 
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Assembly</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 mb-2.5 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">Python</span>
                 <li className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">AppBeat</li>
