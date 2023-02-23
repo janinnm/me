@@ -6,7 +6,7 @@ export default function Projects({ projects }) {
     return (
         <div className="bg-slate-900 min-h-screen min-w-fit">
           <section id="projects" className="bg-slate-900 p-10">
-            <div className="text-white text-left p-10 flex flex-wrap justify-around">
+            <div className="text-white text-left p-10 flex flex-wrap">
               <h3 className="text-white text-3xl py-1">Projects</h3>
               <ul className="py-5 list-outside ml-6">
                 {projects.map((project) => (
