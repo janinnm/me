@@ -2,8 +2,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { SiKaggle } from 'react-icons/si'
+import Projects from './projects'
+import clientPromise from "../lib/mongodb";
 
-export default function Home() {
+
+
+export default function Home(props) {
   return (
     <div className="bg-slate-900 min-h-fit min-w-fit">
       <Head>
@@ -13,13 +17,13 @@ export default function Home() {
       </Head>
 
       <main className="bg-slate-900 px-10">
-        <section className="h-screen">
+        <section>
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl text-white"> janinnm </h1>
             <ul className="flex items-center">
               <Link href="/"><li className="text-white cursor-pointer text-1xl px-5"> Home </li></Link>
-              <Link href="/projects"><li className="text-white cursor-pointer text-1xl px-5"> Projects </li></Link>
               <a href="#skills"><li className="text-white cursor-pointer text-1xl px-5"> Skills </li></a>
+              <a href="#projects"><li className="text-white cursor-pointer text-1xl px-5"> Projects </li></a>
               <li><a className="bg-cyan-500 text-white px-4 py-2 rounded-md ml-8 flex" href="mailto:jvmanalili1@up.edu.ph"> Contact Me</a></li>
             </ul>
           </nav>  
@@ -105,6 +109,10 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section id="projects">
+          <Projects projects={props.projects}/>
+        </section>
       </main>
 
       <footer className="text-white flex justify-center items-center fixed bottom-0 left-0 bg-slate-800 w-full h-10">
@@ -113,4 +121,23 @@ export default function Home() {
 
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  try {
+      const client = await clientPromise;
+      const db = client.db("Portfolio");
+
+      const projects = await db
+          .collection("projects")
+          .find({})
+          .limit(20)
+          .toArray();
+
+      return {
+          props: { projects: JSON.parse(JSON.stringify(projects)) },
+      };
+  } catch (e) {
+      console.error(e);
+  }
 }
