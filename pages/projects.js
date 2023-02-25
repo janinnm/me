@@ -6,13 +6,13 @@ export default function Projects({ projects }) {
     return (
         <div className="bg-slate-900 min-h-screen min-w-fit">
           <section id="projects" className="bg-slate-900 p-10">
-            <div className="text-white text-left p-10 flex flex-wrap" key={projects.id}>
+            <div className="text-white text-left p-10 flex flex-wrap">
               <h3 className="text-white text-3xl py-1">Projects</h3>
               <ul className="py-5 list-outside ml-6">
                 {projects.map((project) => (
-                    <li>
-                        <h2 className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500">{project.title}</h2>
-                        <p className="text-sm text-md leading-8 text-gray-400">{project.description}</p>
+                    <li key={projects.id}>
+                        <h2 className="mt-5  text-2xl text-teal-600 border-t-[1px] border-gray-500" key={projects.id}>{project.title}</h2>
+                        <p className="text-sm text-md leading-8 text-gray-400" key={projects.id}>{project.description}</p>
                     </li>
                 ))}
             </ul>
