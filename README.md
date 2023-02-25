@@ -13,5 +13,5 @@ This website was built using Next.js, Tailwind CSS, MongoDB.
 ## Planned Improvements
 - Enhance overall design
 - Add more content
-- Create a easy-to-maintain repository
+- Create an easy-to-maintain repository
 - Clean code
