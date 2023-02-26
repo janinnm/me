@@ -17,7 +17,7 @@ export default function Home(props) {
       </Head>
 
       <main class="bg-slate-900 px-10">
-        <section>
+        <section class="bg-slate-900 p-12">
           <nav class="py-10 mb-12 flex justify-between">
             <h1 class="text-xl text-white"> janinnm </h1>
             <ul class="flex items-center">
@@ -43,8 +43,9 @@ export default function Home(props) {
           </div>
         </section>
 
-        <section id="skills">
-          <h3 class="text-white text-3xl py-10">Skills</h3>
+        <section id="skills" class="bg-slate-900 p-10">
+        <div class="text-white text-left p-10 flex flex-wrap">
+          <h3 class="text-white text-3xl py-1">Skills</h3>
           <div class="text-white text-left p-20 flex flex-wrap justify-around">
             <div class="mb-10 max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
@@ -108,6 +109,7 @@ export default function Home(props) {
               </div>
             </div>
           </div>
+        </div>
         </section>
 
         <section id="projects">
