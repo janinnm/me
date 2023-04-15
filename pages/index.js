@@ -29,7 +29,7 @@ export default function Home(props) {
           </nav>  
           <div class="text-center p-10">
             <h2 class="text-5xl py-2 text-teal-600 font-medium">Janin Manalili</h2>
-            <h3 class="text-2xl text-white py-2"> 안녕하세요. 제 이름은  <span class="text-teal-500">재닌</span> 입니다 </h3>
+            <h3 class="text-2xl text-white py-2"> 안녕하세요. 저는 <span class="text-teal-500">자닌</span>이에요. 만나서 반가워요 재닌.</h3>
             <p class="text-md py-5 leading-8 text-white"> 
             I am a BS Computer Science Student at  <span class="text-teal-500">University of the Philippines Diliman</span>.
            My interests include  <span class="text-teal-500">Machine Learning, Data Science,</span> and <span class="text-teal-500">Computer Security. </span>  
