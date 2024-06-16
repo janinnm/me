@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { SiKaggle } from 'react-icons/si'
 import Projects from './projects'
 import clientPromise from "../lib/mongodb";
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 export default function Home(props) {
@@ -120,6 +120,8 @@ export default function Home(props) {
       <footer class="text-white flex justify-center items-center fixed bottom-0 left-0 bg-slate-800 w-full h-10">
           <h2>© Copyright 2022 Janin Manalili.</h2>
       </footer>
+
+    <Analytics />
 
     </div>
   )
