@@ -5,13 +5,13 @@ export default async (req, res) => {
        const client = await clientPromise;
        const db = client.db("Portfolio");
 
-       const projects = await db
-           .collection("projects")
+       const profile = await db
+           .collection("profile")
            .find({})
-           .limit(10)
+           .limit(1)
            .toArray();
 
-       res.json(projects);
+       res.json(profile);
    } catch (e) {
        console.error(e);
    }
