@@ -23,36 +23,6 @@ export default function Home({ profile, timeline }) {
             <p className="text-[15px] text-[rgba(0,0,0,.6)]">
               {profile?.header}
             </p>
-
-            {/* Current */}
-            {/* {profile?.current && (
-              <div>
-                <div className="inline-flex items-center rounded-full bg-[#F5F5F5] px-3 py-1 text-[14px] gap-1 hover:bg-[#E5E5E5] transition-colors w-max">
-                  <span className="text-[#666666]">
-                    {profile.current.year} ·
-                  </span>
-                  {profile.current.description && (
-                    <span className="text-[rgba(0,0,0,.6)]">
-                      {profile.current.description} @
-                    </span>
-                  )}
-                  {profile.current.link ? (
-                    <a
-                      href={profile.current.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline underline-offset-2 text-black"
-                    >
-                      {profile.current.title}
-                    </a>
-                  ) : (
-                    <span className="underline underline-offset-2 text-black">
-                      {profile.current.title}
-                    </span>
-                  )}
-                </div>
-              </div>
-            )} */}
           </div>
 
           <hr className="border-gray-200" />
@@ -77,6 +47,11 @@ export default function Home({ profile, timeline }) {
                       href={item.link}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={() =>
+                        window.va?.track("timeline_click", {
+                          title: item.title,
+                        })
+                      }
                       className="underline underline-offset-2 text-black"
                     >
                       {item.title}
@@ -100,7 +75,8 @@ export default function Home({ profile, timeline }) {
               {profile?.email && (
                 <a
                   href={`mailto:${profile.email}`}
-                  className="inline-flex items-center bg-[#F5F5F5] px-3 py-1 text-[14px] text-black gap-2 hover:bg-[#E5E5E5] transition-colors w-max"
+                  onClick={() => window.va?.track("email_click")}
+                  className="inline-flex items-center rounded-full bg-[#F5F5F5] px-3 py-1 text-[14px] text-black gap-2 hover:bg-[#E5E5E5] transition-colors w-max"
                 >
                   email
                 </a>
@@ -110,14 +86,15 @@ export default function Home({ profile, timeline }) {
                   href={profile.resume}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center bg-[#F5F5F5] px-3 py-1 text-[14px] text-black gap-2 hover:bg-[#E5E5E5] transition-colors w-max"
+                  onClick={() => window.va?.track("resume_click")}
+                  className="inline-flex items-center rounded-full bg-[#F5F5F5] px-3 py-1 text-[14px] text-black gap-2 hover:bg-[#E5E5E5] transition-colors w-max"
                 >
                   resume
                 </a>
               )}
             </div>
 
-            {/* Minimalist Social Icons Bottom Right */}
+            {/* Social Icons Bottom Right */}
             <div className="absolute bottom-0 right-0 flex gap-3 text-gray-600">
               {profile?.github && (
                 <a
@@ -125,6 +102,7 @@ export default function Home({ profile, timeline }) {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
+                  onClick={() => window.va?.track("github_click")}
                   className="hover:text-gray-900 transition-colors text-lg"
                 >
                   <FaGithub />
@@ -136,6 +114,7 @@ export default function Home({ profile, timeline }) {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
+                  onClick={() => window.va?.track("linkedin_click")}
                   className="hover:text-gray-900 transition-colors text-lg"
                 >
                   <FaLinkedin />
@@ -147,6 +126,7 @@ export default function Home({ profile, timeline }) {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
+                  onClick={() => window.va?.track("instagram_click")}
                   className="hover:text-gray-900 transition-colors text-lg"
                 >
                   <FaInstagram />
