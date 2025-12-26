@@ -5,6 +5,8 @@ This website was built using Next.js, Tailwind CSS, MongoDB.
 
 ## History
 
+- 12/2025
+    - Update design and content; add blogs page     
 - 02/2023
     - Integration of database using MongoDB
 -  10/2022
