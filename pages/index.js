@@ -17,41 +17,43 @@ export default function Home({ profile, timeline }) {
         <section className="w-full max-w-[420px] flex flex-col gap-8 relative">
           {/* Header */}
           <div className="flex flex-col gap-2">
-            <h1 className="text-[18px] font-medium text-[#111111]">
-              {profile?.short_name}
-            </h1>
+            <div className="flex items-center gap-1">
+              <img src="/favicon.ico" alt="Janin icon" className="w-20 h-20" />
+              <h1 className="text-[18px] font-medium text-[#111111]">
+                {profile?.short_name}
+              </h1>
+            </div>
             <p className="text-[15px] text-[rgba(0,0,0,.6)]">
               {profile?.header}
             </p>
-            {/* Current */}{" "}
+
+            {/* Current */}
             {profile?.current && (
-              <div>
-                {" "}
+              <div className="mt-2">
                 <div className="inline-flex items-center rounded-2xl bg-gray-100 px-3 py-1 text-[14px] font-medium text-gray-700 gap-1 transition-colors hover:bg-gray-200 whitespace-nowrap overflow-hidden text-ellipsis">
-                  {" "}
                   <span className="text-gray-500">
                     {profile.current.year} ·
-                  </span>{" "}
-                  <span className="text-[rgba(0,0,0,.6)]">
-                    {profile.current.description} @
-                  </span>{" "}
+                  </span>
+                  {profile.current.description && (
+                    <span className="text-[rgba(0,0,0,.6)]">
+                      {profile.current.description} @
+                    </span>
+                  )}
                   {profile.current.link ? (
                     <a
                       href={profile.current.link}
-                      className="underline underline-offset-2"
                       target="_blank"
                       rel="noreferrer"
+                      className="underline underline-offset-2"
                     >
-                      {" "}
-                      {profile.current.title}{" "}
+                      {profile.current.title}
                     </a>
                   ) : (
                     <span className="underline underline-offset-2">
-                      {" "}
-                      {profile.current.title}{" "}
+                      {profile.current.title}
                     </span>
-                  )}{" "}
-                </div>{" "}
+                  )}
+                </div>
               </div>
             )}
           </div>
@@ -125,7 +127,7 @@ export default function Home({ profile, timeline }) {
               )}
             </div>
 
-            {/* Social Icons Bottom Right */}
+            {/* Social Icons Bottom Right inside section */}
             <div className="absolute bottom-0 right-0 flex gap-3 text-gray-600">
               {profile?.github && (
                 <a
