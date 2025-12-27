@@ -23,6 +23,37 @@ export default function Home({ profile, timeline }) {
             <p className="text-[15px] text-[rgba(0,0,0,.6)]">
               {profile?.header}
             </p>
+            {/* Current */}{" "}
+            {profile?.current && (
+              <div>
+                {" "}
+                <div className="inline-flex items-center rounded-2xl bg-gray-100 px-3 py-1 text-[14px] font-medium text-gray-700 gap-1 transition-colors hover:bg-gray-200 whitespace-nowrap overflow-hidden text-ellipsis">
+                  {" "}
+                  <span className="text-gray-500">
+                    {profile.current.year} ·
+                  </span>{" "}
+                  <span className="text-[rgba(0,0,0,.6)]">
+                    {profile.current.description} @
+                  </span>{" "}
+                  {profile.current.link ? (
+                    <a
+                      href={profile.current.link}
+                      className="underline underline-offset-2"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      {profile.current.title}{" "}
+                    </a>
+                  ) : (
+                    <span className="underline underline-offset-2">
+                      {" "}
+                      {profile.current.title}{" "}
+                    </span>
+                  )}{" "}
+                </div>{" "}
+              </div>
+            )}
           </div>
 
           <hr className="border-gray-200" />
